@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.slider{
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+  &__left,&__right{
+    width: 45px;
+    height: 45px;
+    background-color: #F8F8F8;
+    border-radius: 45px;
+    border: 1px solid black;
+    
+    display: flex;    
+    align-items: center;
+    justify-content: center;    
+    margin: 20px;
+    pointer-events: all;
+  }
+
+  &__pages{
+    display: flex;
+    justify-content: center;
+  }
+
+  &__page{
+    height: 15px;
+    width: 15px;
+    border: 1px solid silver;
+    border-radius: 15px;
+    background-color: darkgray;
+    margin:5px;
+  }
+
+  &__page:hover{  
+    background-color: black;    
+  }
+
+}
