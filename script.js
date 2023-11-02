@@ -63,8 +63,9 @@ arrow_right.addEventListener("click", (event) => {
 });
 
 function refreshImages(id) {
-    document.getElementById("slider__img").src = image_data[id].src;
+    const idd = image_data.find(el => el.id === id);
 
+    document.getElementById("slider__img").src = idd.src;
 
     const el = Array.from(document.querySelectorAll('.slider__page'));
 
